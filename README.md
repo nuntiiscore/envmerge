@@ -27,25 +27,25 @@ The tool is designed to be:
 Use an explicit version tag for reproducible runs:
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.0 -- --help
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --help
 ```
 
 Basic sync (append only missing keys):
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.0 --
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 --
 ```
 
 Force mode (append updates for differing keys and missing keys):
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.0 -- --force
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --force
 ```
 
 Custom paths:
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.0 -- --src ./configs/.env.example --dst ./configs/.env
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --src ./configs/.env.example --dst ./configs/.env
 ```
 
 > Note: arguments must be passed **after `--`** when using `go run <module>@<version>`.
@@ -57,7 +57,7 @@ go run github.com/nuntiiscore/envmerge/cmd@v0.1.0 -- --src ./configs/.env.exampl
 Install a specific version:
 
 ```bash
-go install github.com/nuntiiscore/envmerge/cmd@v0.1.0
+go install github.com/nuntiiscore/envmerge/cmd@v0.1.1
 ```
 
 Run:
