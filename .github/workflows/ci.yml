@@ -22,14 +22,6 @@ jobs:
           go-version: "1.22.x"
           cache: true
 
-      - name: Go version
-        run: go version
-
-      - name: Debug coverage env
-        run: |
-          echo "GOCOVERDIR=$GOCOVERDIR"
-          echo "GOEXPERIMENT=$GOEXPERIMENT"
-
       - name: Test
         run: go test ./...
 
