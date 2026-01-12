@@ -1,3 +1,7 @@
+[![CI](https://github.com/nuntiiscore/envmerge/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/nuntiiscore/envmerge/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nuntiiscore/envmerge)](https://goreportcard.com/report/github.com/nuntiiscore/envmerge)
+[![Coverage](https://codecov.io/gh/nuntiiscore/envmerge/branch/main/graph/badge.svg)](https://codecov.io/gh/nuntiiscore/envmerge)
+
 # envmerge
 
 `envmerge` is a small Go CLI tool that synchronizes `.env` files by appending missing
@@ -27,25 +31,25 @@ The tool is designed to be:
 Use an explicit version tag for reproducible runs:
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --help
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.2 -- --help
 ```
 
 Basic sync (append only missing keys):
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 --
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.2 --
 ```
 
 Force mode (append updates for differing keys and missing keys):
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --force
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.2 -- --force
 ```
 
 Custom paths:
 
 ```bash
-go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --src ./configs/.env.example --dst ./configs/.env
+go run github.com/nuntiiscore/envmerge/cmd@v0.1.2 -- --src ./configs/.env.example --dst ./configs/.env
 ```
 
 > Note: arguments must be passed **after `--`** when using `go run <module>@<version>`.
@@ -57,7 +61,7 @@ go run github.com/nuntiiscore/envmerge/cmd@v0.1.1 -- --src ./configs/.env.exampl
 Install a specific version:
 
 ```bash
-go install github.com/nuntiiscore/envmerge/cmd@v0.1.1
+go install github.com/nuntiiscore/envmerge/cmd@v0.1.2
 ```
 
 Run:

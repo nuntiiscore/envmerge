@@ -32,8 +32,8 @@ jobs:
           go test ./... -coverprofile=coverage.out
           go tool cover -func coverage.out | tail -n 1
 
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
         with:
-          name: coverage
-          path: coverage.out
+          files: coverage.out
+          fail_ci_if_error: true
