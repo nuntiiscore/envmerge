@@ -33,7 +33,8 @@ jobs:
           go tool cover -func coverage.out | tail -n 1
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage.out
           fail_ci_if_error: true
